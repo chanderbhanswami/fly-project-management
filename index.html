@@ -1,0 +1,541 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="styles.css">
+        <meta name="theme-color" content="#5f2c82" media="(prefers-color-scheme: dark)">
+        <meta name="theme-color" content="#49a09d" media="(prefers-color-scheme: light)">
+        <meta name="msapplication-navbutton-color" content="#5f2c82">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
+        <script src="https://kit.fontawesome.com/80e4c3cbfe.js" crossorigin="anonymous"></script>         
+        <script src="script.js"></script>         
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>         
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96"/> 
+        <link rel="icon" type="image/svg+xml" href="favicon.svg"/> 
+        <link rel="shortcut icon" href="/Images/logo.svg"/> 
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/> 
+        <link rel="manifest" href="site.webmanifest"/>
+        <link rel="canonical" href="https://beta.familialforestry.org/" />
+        <meta name="description" content="Fly is the best project management platform designed to help teams collaborate and deliver projects faster. With real-time collaboration, smart task management, and advanced analytics, Fly is perfect for teams of all sizes.">
+        <meta name="keywords" content="project management, team collaboration, task management, analytics, productivity, workflow, project tracking, team productivity, project planning, real-time collaboration">
+        <meta name="author" content="Fly Team">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="FLY | Best Project Management Platform">
+        <meta property="og:description" content="Fly is the best project management platform designed to help teams collaborate and deliver projects faster. With real-time collaboration, smart task management, and advanced analytics, Fly is perfect for teams of all sizes.">
+        <meta property="og:image" content="/Images/logo.svg">
+        <meta property="og:url" content="https://beta.familialforestry.org/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Fly">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="FLY | Best Project Management Platform">
+        <meta name="twitter:description" content="Fly is the best project management platform designed to help teams collaborate and deliver projects faster. With real-time collaboration, smart task management, and advanced analytics, Fly is perfect for teams of all sizes.">
+        <meta name="twitter:image" content="/Images/logo.svg">
+        <meta name="twitter:site" content="@fly">
+        <meta name="twitter:creator" content="@fly">
+        <meta name="facebook:card" content="summary_large_image">
+        <meta name="facebook:title" content="FLY | Best Project Management Platform">
+        <meta name="facebook:description" content="Fly is the best project management platform designed to help teams collaborate and deliver projects faster. With real-time collaboration, smart task management, and advanced analytics, Fly is perfect for teams of all sizes.">
+        <meta name="facebook:image" content="/Images/logo.svg">
+        <meta http-equiv="content-language" content="en">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="MobileOptimized" content="320">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Fly">
+        <meta name="application-name" content="Fly">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> FLY | Best Project Management Platform </title>
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="bBWgKakgUAn8EvIy5HnDQQ" async></script>
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Fly",
+          "image": "https://yourdomain.com/Images/logo.svg",
+          "description": "Fly is the best project management platform designed to help teams collaborate and deliver projects faster. With real-time collaboration, smart task management, and advanced analytics, Fly is perfect for teams of all sizes.",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web, iOS, Android",
+          "url": "https://beta.familialforestry.org/",
+          "offers": {
+            "@type": "Offer",
+            "price": "19",
+            "priceCurrency": "USD"
+          }
+        }
+        </script>
+    
+    </head>     
+    <body>
+        <div id="splash">
+            <h1 class="splash-logo">Fly</h1>
+        </div>  
+        <!-- Main Content -->         
+        <main class="main-container">
+            <!-- Sticky Header -->         
+            <header class="sticky-header"> 
+                <div class="container"> 
+                    <div class="header-left-container"> 
+                        <div class="page-title"> 
+                            <p class="gradient-title" onclick="homeBtn()">Fly</p> 
+                        </div>                     
+                    </div>                 
+                    <div class="header-right-container"> 
+                        <nav> 
+                            <ul id="nav-links"> 
+                                <li onclick="homeBtn()">Home</li>                             
+                                <li class="nav-link" data-target="features" onclick="featuresBtn()">Features</li>                             
+                                <li class="nav-link" data-target="reviews" onclick="reviewsBtn()">Reviews</li>                             
+                                <li class="nav-link" data-target="pricing" onclick="pricingBtn()">Pricing</li>                             
+                                <li class="nav-link" data-target="faq" onclick="faqBtn()">FAQ</li>                             
+                                <button onclick="getStartedBtn()" class="get-started-btn">Get Started</button>                             
+                            </ul>                         
+                        </nav>                     
+                        <div class="hamburger-menu" onclick="toggleMenu()"> <i class="fa-solid fa-bars"></i> 
+                        </div>
+                        <div class="mobile-nav-links" id="mobileNav"> 
+                            <ul id="nav-links"> 
+                                <li onclick="homeBtn()">Home</li>                                     
+                                <li class="nav-link" data-target="features" onclick="featuresBtn()">Features</li>                                     
+                                <li class="nav-link" data-target="reviews" onclick="reviewsBtn()">Reviews</li>                                     
+                                <li class="nav-link" data-target="pricing" onclick="pricingBtn()">Pricing</li>                                     
+                                <li class="nav-link" data-target="faq" onclick="faqBtn()">FAQ</li>                                     
+                                <button onclick="getStartedBtn()" class="get-started-btn">Get Started</button>                                     
+                            </ul>                                 
+                        </div>              
+                    </div>                 
+                </div>             
+            </header>
+            <!-- Hero Section -->             
+            <section class="hero"> 
+                <div class="container">
+                    <!-- Header -->                     
+                    <header class="header-container"> 
+                        <div class="header-left-container"> 
+                            <div class="page-title"> 
+                                <p onclick="homeBtn()">Fly</p> 
+                            </div>                             
+                        </div>                         
+                        <!-- Non Sticky Nav Bar -->                         
+                        <div class="header-right-container"> 
+                            <nav> 
+                                <ul> 
+                                    <li onclick="homeBtn()">Home</li>                                     
+                                    <li onclick="featuresBtn()">Features</li>                                     
+                                    <li onclick="reviewsBtn()">Reviews</li>                                     
+                                    <li onclick="pricingBtn()">Pricing</li>                                     
+                                    <li onclick="faqBtn()">FAQ</li>                                     
+                                    <button onclick="getStartedBtn()" class="get-started-btn">Get Started</button>                                     
+                                </ul>                                 
+                            </nav>                             
+                            <div class="hamburger-menu" id="hamburger2" onclick="toggleMenu2()"> <i class="fa-solid fa-bars"></i> 
+                            </div>
+                            <div class="mobile-nav-links2" id="mobileNav2"> 
+                                <ul> 
+                                    <li onclick="homeBtn()">Home</li>                                     
+                                    <li onclick="featuresBtn()">Features</li>                                     
+                                    <li onclick="reviewsBtn()">Reviews</li>                                     
+                                    <li onclick="pricingBtn()">Pricing</li>                                     
+                                    <li onclick="faqBtn()">FAQ</li>                                     
+                                    <button onclick="getStartedBtn()" class="get-started-btn">Get Started</button>                                     
+                                </ul>                                 
+                            </div>                             
+                        </div>                         
+                    </header>                     
+                    <!-- Hero Section Content -->                     
+                    <article class="content-container"> 
+                        <div class="content-inner-container"> 
+                            <div class="feature-container"> 
+                                <h1>Fly makes teams faster</h1> 
+                                <p>With Fly, your team can collaborate and deliver projects faster than ever before. Our intuitive project management platform has been designed by experts to streamline workflows.</p> 
+                                <button onclick="pricingBtn()" class="pricing-btn">See Pricing</button>                                 
+                            </div>                             
+                            <!-- Sign In Form -->                             
+                            <div class="signin-form-container"> 
+                                <h2>Join Fly Today</h2>
+                                <input type="text" id="name" placeholder="Full name*" required name="name" autocomplete="name"> 
+                                <input type="email" id="email" placeholder="Email*" required name="email" autocomplete="email"> 
+                                <div class="password-show-hide"> 
+                                    <input type="password" id="password" placeholder="Password*" required name="password" autocomplete="new-password"> <i class="fa-solid fa-eye-slash toggle-password-icon" onclick="togglePassword()"></i> 
+                                </div>                                 
+                                <select name="Type" id="type" required> 
+                                    <option value="" disabled selected>Type</option>                                     
+                                    <option value="basic">Basic</option>                                     
+                                    <option value="pro">Pro</option>                                     
+                                    <option value="business">Business</option>                                     
+                                </select>                                 
+                                <button onclick="registerBtn()" class="register-btn">Register</button>                                 
+                            </div>                             
+                        </div>                         
+                    </article>                     
+                </div>                 
+            </section>             
+            <!-- Features Section -->             
+            <section class="second-container" id="features-1"> 
+                <div class="skewed-bg"></div>                 
+                <article class="app-features-container"> 
+                    <!-- Features Section Label -->                     
+                    <div class="app-features-header-container"> 
+                        <p>Features</p> 
+                        <h2>App <span class="gradient">Features</span></h2> 
+                    </div>                     
+                    <!-- Features Section Content -->                     
+                    <div class="app-features-content-container"> 
+                        <div class="app-features-content-upper-container"> 
+                            <div class="app-features-card"> <i class="bi bi-people"></i> 
+                                <h3>Real-time Collaboration</h3> 
+                                <p>Work together seamlessly with live updates, instant notifications, and real-time editing that keeps everyone on the same page.</p> 
+                            </div>                             
+                            <div class="app-features-card"> <i class="bi bi-list-task"></i> 
+                                <h3>Smart Task Management</h3> 
+                                <p>Organize, assign, and track tasks with intuitive boards, timelines, and priority systems that adapt to your workflow.</p> 
+                            </div>                             
+                            <div class="app-features-card"> <i class="bi bi-infinity"></i> 
+                                <h3>Unlimited Projects</h3> 
+                                <p>Create and manage unlimited projects with customizable templates, so you can scale your operations without restrictions.</p> 
+                            </div>                             
+                        </div>                         
+                        <div class="app-features-content-lower-container"> 
+                            <div class="app-features-card"> <i class="bi bi-bar-chart-line"></i> 
+                                <h3>Advanced Analytics</h3> 
+                                <p>Get detailed insights into team performance, project progress, and productivity metrics with comprehensive reporting tools.</p> 
+                            </div>                             
+                            <div class="app-features-card"> <i class="bi bi-lock"></i> 
+                                <h3>Secure File Sharing</h3> 
+                                <p>Share documents, images, and files securely within projects with version control and permission management built-in.</P> 
+                            </div>                             
+                            <div class="app-features-card"> <i class="bi bi-arrow-repeat"></i> 
+                                <h3>Cross-Platform Sync</h3> 
+                                <p>Access your projects anywhere with seamless synchronization across desktop, mobile, and web platforms for ultimate flexibility.</P> 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </article>                 
+            </section>             
+            <!-- Features Section 2 -->             
+            <section class="third-container" id="features-2"> 
+                <article class="app-features-container-second"> 
+                    <!-- UI Image -->                     
+                    <div class="app-features-container-second-left"> 
+                        <div class="app-features-container-second-left-img-box"> 
+                            <img src="/Images/ui 1-portrait.png" alt="Fly app user interface displayed on a smartphone screen showing a project dashboard with colorful task cards and progress bars in a modern workspace setting. The interface is clean and organized, conveying a sense of productivity and collaboration. Visible text includes project names, task titles, and status indicators." loading="lazy">
+                            <div class="phone-shadow"></div>                             
+                        </div>                         
+                    </div>                     
+                    <div class="app-features-container-second-right"> 
+                        <!-- Features Section Label -->                         
+                        <div class="app-features-container-second-right-upper"> 
+                            <h2><span class="gradient">Core</span> Project Tools</h2> 
+                            <p>Powerful project management tools that help your team plan, execute, and deliver projects with precision and efficiency.</p> 
+                        </div>                         
+                        <!-- Features Section Content -->                         
+                        <div class="app-features-container-second-right-lower"> 
+                            <div class="app-features-container-second-right-lower-upper"> 
+                                <div class="app-features-container-second-card"> 
+                                    <div class="app-features-container-second-card-icon"> <i class="bi bi-pin-map"></i> 
+                                    </div>                                     
+                                    <div class="app-features-container-second-card-content"> 
+                                        <p id="app-feature-container-second-p">Project Planning</p> 
+                                        <p>Create detailed project roadmaps with milestones, dependencies, and resource allocation to ensure successful project delivery.</p> 
+                                    </div>                                     
+                                </div>                                 
+                                <div class="app-features-container-second-card"> 
+                                    <div class="app-features-container-second-card-icon"> <i class="bi bi-chat-left-dots"></i> 
+                                    </div>                                     
+                                    <div class="app-features-container-second-card-content"> 
+                                        <p id="app-feature-container-second-p">Team Communication</p> 
+                                        <p>Built-in messaging, comments, and notification systems keep your team connected and informed throughout every project phase.</p> 
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                            <div class="app-features-container-second-right-lower-lower"> 
+                                <div class="app-features-container-second-card"> 
+                                    <div class="app-features-container-second-card-icon"> <i class="bi bi-bar-chart-steps"></i> 
+                                    </div>                                     
+                                    <div class="app-features-container-second-card-content"> 
+                                        <p id="app-feature-container-second-p">Progress Tracking</p> 
+                                        <p>Monitor project progress with visual dashboards, completion percentages, and automated status updates that keep stakeholders informed.</p> 
+                                    </div>                                     
+                                </div>                                 
+                                <div class="app-features-container-second-card"> 
+                                    <div class="app-features-container-second-card-icon"> <i class="bi bi-boxes"></i> 
+                                    </div>                                     
+                                    <div class="app-features-container-second-card-content"> 
+                                        <p id="app-feature-container-second-p">Resource Management</p> 
+                                        <p>Efficiently allocate team members, budget, and resources across multiple projects with intelligent scheduling.</p> 
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </article>                 
+            </section>             
+            <!-- Features Section 3 -->             
+            <section class="fourth-container" id="features-3"> 
+                <div class="skewed-bg2"></div>                 
+                <article class="app-features-container-second2"> 
+                    <div class="app-features-container-second-right"> 
+                        <!-- Features Section Label -->                         
+                        <div class="app-features-container-second-right-upper"> 
+                            <h2><span class="gradient">Advanced</span> Workflow Solutions</h2> 
+                            <p>Sophisticated features designed to optimize team performance and automate complex project workflows for maximum efficiency.</p> 
+                        </div>                         
+                        <!-- Features Section Content -->                         
+                        <div class="app-features-container-second-right-lower"> 
+                            <div class="app-features-container-second-right-lower-upper"> 
+                                <div class="app-features-container-second-card"> 
+                                    <div class="app-features-container-second-card-icon"> <i class="bi bi-diagram-3"></i> 
+                                    </div>                                     
+                                    <div class="app-features-container-second-card-content"> 
+                                        <p id="app-feature-container-second-p">Custom Workflows</p> 
+                                        <p>Design and implement custom workflow templates that match your team's unique processes and automatically guide projects through each phase.</p> 
+                                    </div>                                     
+                                </div>                                 
+                                <div class="app-features-container-second-card"> 
+                                    <div class="app-features-container-second-card-icon"> <i class="bi bi-hourglass-split"></i> 
+                                    </div>                                     
+                                    <div class="app-features-container-second-card-content"> 
+                                        <p id="app-feature-container-second-p">Time Tracking</p> 
+                                        <p>Accurate time tracking with detailed timesheets, billable hours calculation, and productivity insights to optimize team performance.</p> 
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                            <div class="app-features-container-second-right-lower-lower"> 
+                                <div class="app-features-container-second-card"> 
+                                    <div class="app-features-container-second-card-icon"> <i class="bi bi-puzzle"></i> 
+                                    </div>                                     
+                                    <div class="app-features-container-second-card-content"> 
+                                        <p id="app-feature-container-second-p">Integration Hub</p> 
+                                        <p>Connect with 100+ popular tools and services including Slack, Google Workspace, Microsoft Teams, and more for seamless workflow integration.</p> 
+                                    </div>                                     
+                                </div>                                 
+                                <div class="app-features-container-second-card"> 
+                                    <div class="app-features-container-second-card-icon"> <i class="bi bi-file-earmark-bar-graph"></i> 
+                                    </div>                                     
+                                    <div class="app-features-container-second-card-content"> 
+                                        <p id="app-feature-container-second-p">Automated Reporting</p> 
+                                        <p>Generate comprehensive project reports automatically with customizable templates, scheduled delivery, and executive-level insights.</p> 
+                                    </div>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                    <!-- Features Section UI Image -->                     
+                    <div class="app-features-container-second-left"> 
+                        <div class="app-features-container-second-left-img-box"> 
+                            <img src="/Images/ui 2-portrait.png" alt="Fly app user interface displayed on a smartphone screen showing an advanced workflow dashboard with interconnected task cards, progress indicators, and automation icons. The interface appears modern and organized, suggesting efficiency and productivity in a collaborative workspace. Visible text includes workflow names, task statuses, and action buttons. The overall tone is professional and motivating." loading="lazy">
+                            <div class="phone-shadow"></div>                             
+                        </div>                         
+                    </div>                     
+                </article>                 
+            </section>             
+            <!-- Reviews Section -->             
+            <section class="fifth-container" id="reviews"> 
+                <article class="reviews-container"> 
+                    <!-- Reviews Section Label -->                     
+                    <div class="reviews-title-container"> 
+                        <p>Reviews</p> 
+                        <h2>Trusted by Teams <span class="gradient">Worldwide</span></h2> 
+                    </div>                     
+                    <!-- Reviews Section Content -->                     
+                    <div class="reviews-lower-container"> 
+                        <div class="review-container"> 
+                            <div class="review-item active" data-index="0"> 
+                                <div class="quote-symbol">"</div>                                 
+                                    <p class="review-text"> 
+                                        I've been using Fly for project management for several months now and it's been a complete game changer. The team collaboration features are outstanding and the support team is always there when we need help.
+                                    </p> 
+                                <div class="stars"> <span class="star">★</span> <span class="star">★</span> <span class="star">★</span> <span class="star">★</span> <span class="star empty">★</span> 
+                                </div>                                 
+                                <div class="reviewer-name">Garry Alexander</div>                                 
+                                <div class="reviewer-handle">@garry</div>                                 
+                            </div>                             
+                            <div class="review-item" data-index="1"> 
+                                <div class="quote-symbol">"</div>                                 
+                                    <p class="review-text"> 
+                                        Fly has transformed how our team manages projects. The interface is intuitive and packed with useful features for task tracking and team coordination. We've been using it for months and keep discovering new ways it helps us stay organized and productive.
+                                    </p> 
+                                <div class="stars"> <span class="star">★</span> <span class="star">★</span> <span class="star">★</span> <span class="star">★</span> <span class="star empty">★</span> 
+                                </div>                                 
+                                <div class="reviewer-name">Deborah Smith</div>                             
+                                <div class="reviewer-handle">@deborah</div>                                 
+                            </div>                             
+                            <div class="review-item" data-index="2"> 
+                                <div class="quote-symbol">"</div>                                 
+                                    <p class="review-text"> 
+                                        Our team's productivity has significantly improved since switching to Fly. The real-time collaboration features and project tracking tools are exceptional. The support team is incredibly responsive and helpful. Highly recommend!
+                                    </p> 
+                                <div class="stars"> <span class="star">★</span> <span class="star">★</span> <span class="star">★</span> <span class="star">★</span> <span class="star">★</span> 
+                                </div>                                 
+                                <div class="reviewer-name">Michael Johnson</div>                                 
+                                <div class="reviewer-handle">@michael</div>                                 
+                            </div>                             
+                            <div class="review-item" data-index="3"> 
+                                <div class="quote-symbol">"</div>                                 
+                                    <p class="review-text"> 
+                                        Fly makes managing multiple projects effortless. The clean interface and powerful features help our team stay organized and meet deadlines consistently. I've recommended it to several other teams and they all love it too.
+                                    </p> 
+                                <div class="stars"> <span class="star">★</span> <span class="star">★</span> <span class="star">★</span> <span class="star">★</span> <span class="star">★</span> 
+                                </div>                                 
+                                <div class="reviewer-name">Sarah Williams</div>                                 
+                                <div class="reviewer-handle">@sarah</div>                                 
+                            </div>                             
+                        </div>                         
+                        <div class="profile-avatars"> 
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&h=120&fit=crop&crop=face" alt="Sarah Williams smiling warmly facing the camera in a bright setting suggesting a positive and welcoming mood no visible text" class="avatar left" data-index="3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=face" alt="Garry Alexander smiling confidently while facing the camera in a well-lit indoor setting with a neutral background suggesting professionalism and approachability no visible text" class="avatar center" data-index="0"> 
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&h=120&fit=crop&crop=face" alt="Deborah Smith smiling gently while facing the camera in a softly lit indoor setting with a calm and friendly mood no visible text" class="avatar right" data-index="1">
+                        </div>                         
+                    </div>                     
+                </article>                 
+            </section>             
+            <!-- Pricing Section -->             
+            <section class="sixth-container" id="pricing"> 
+                <div class="skewed-bg3"></div>                 
+                <article class="pricing-container"> 
+                    <!-- Pricing Section Label -->                     
+                    <div class="pricing-container-upper"> 
+                        <p>Pricing</p> 
+                        <h2>Choose Your <span class="gradient">Plan</span></h2> 
+                    </div>                     
+                    <!-- Pricing Section Cards -->                     
+                    <div class="pricing-container-lower"> 
+                        <div class="pricing-card"> 
+                            <h3>Basic</h3> 
+                            <p class="pricing-card-plan"><span class="currency">$</span><span class="pricing-card-price">19</span>month</p> 
+                            <p>Perfect for small teams getting started. Access essential project management features, basic reporting, and collaboration tools with up to 5 team members and 10GB storage</p> 
+                            <button onclick="getStartedBtn()" class="get-started-btn2">Get Started</button>                             
+                        </div>                         
+                        <div class="pricing-card" id="pro-card"> 
+                            <h3>Pro</h3> 
+                            <p class="pricing-card-plan"><span class="currency">$</span><span class="pricing-card-price">39</span>month</p> 
+                            <p>Ideal for growing teams and departments. Unlock advanced features, priority support, unlimited projects, and enhanced analytics for up to 25 team members with 100GB storage</p> 
+                            <button onclick="getStartedBtn()" class="get-started-btn3">Get Started</button>                             
+                        </div>                         
+                        <div class="pricing-card"> 
+                            <h3>Business</h3> 
+                            <p class="pricing-card-plan"><span class="currency">$</span><span class="pricing-card-price">99</span>month</p> 
+                            <p>Designed for large organizations and enterprises. Full access to all features, dedicated account management, advanced security, and unlimited team members with unlimited storage</p> 
+                            <button onclick="getStartedBtn()" class="get-started-btn4">Get Started</button>                             
+                        </div>                         
+                    </div>                     
+                </article>                 
+            </section>             
+            <!-- FAQ Section -->             
+            <section class="seventh-container" id="faq"> 
+                <article class="faq-container"> 
+                    <!-- FAQ Section Label -->                     
+                    <div class="faq-container-upper"> 
+                        <p>Faq</p> 
+                        <h2>Frequently Asked <span class="gradient">Questions</span></h2> 
+                    </div>                     
+                    <!-- FAQ Section Content -->                     
+                    <div class="faq-container-lower"> 
+                        <div class="faq"> 
+                            <div class="faq-item-open"> 
+                                <div class="faq-question"> 
+                                    What is Fly? <span>-</span> 
+                                </div>                                 
+                                <div class="faq-answer"> 
+                                    Fly is a comprehensive project management platform designed to enhance team productivity and streamline collaboration workflows with its intuitive interface and powerful features.<br>
+                                    <br> 
+                                    Fly is available on multiple platforms, including web, iOS, and Android, ensuring your team can manage projects and collaborate from anywhere. Fly is ideal for teams, departments, and organizations looking to improve their project management efficiency.
+                                </div>                                 
+                            </div>                             
+                            <div class="faq-item"> 
+                                <div class="faq-question"> 
+                                    Is this available to my country? <span>+</span> 
+                                </div>                                 
+                                <div class="faq-answer"> 
+                                    Fly is designed to be accessible globally with servers worldwide for optimal performance. You can check our website for specific regional features or contact our support team for availability in your area.
+                                </div>                                 
+                            </div>                             
+                            <div class="faq-item"> 
+                                <div class="faq-question"> 
+                                    How do I use the features of Fly app? <span>+</span> 
+                                </div>                                 
+                                <div class="faq-answer"> 
+                                    To get started with Fly, simply create an account through our website or mobile app. Once registered, you can create your first project, invite team members, set up tasks, and begin collaborating. Our intuitive interface guides you through all the essential project management features.
+                                </div>                                 
+                            </div>                             
+                            <div class="faq-item"> 
+                                <div class="faq-question"> 
+                                    How much do the Fly app cost? <span>+</span> 
+                                </div>                                 
+                                <div class="faq-answer"> 
+                                    Fly offers flexible pricing plans to suit different team sizes and needs. We have a Basic plan at $19 per month for small teams, a Pro plan at $39 per month for growing teams, and a Business plan at $99 per month for large organizations. Each plan includes different features and team member limits.
+                                </div>                                 
+                            </div>                             
+                            <div class="faq-item"> 
+                                <div class="faq-question"> 
+                                    I have technical problem, what do I email? <span>+</span> 
+                                </div>                                 
+                                <div class="faq-answer"> 
+                                    Please email our support team at <a href="mailto:support@flyapp.com">support@flyapp.com</a> with details about your technical issue. Our dedicated support team will help resolve any problems you encounter with the platform.
+                                </div>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </article>                 
+            </section>             
+            <!-- Joining Section -->             
+            <section class="eighth-container"> 
+                <div class="eighth-container-background"></div>                 
+                <div class="skewed-bg4"></div>                 
+                <article class="joining-container"> 
+                    <div class="content-container"> 
+                        <div class="content-inner-container"> 
+                            <div class="feature-container"> 
+                                <h1 id="joinig-heading">Join over 1M+ teams who manage projects with Fly</h1> 
+                                <p>Fly is the ultimate project management platform that helps teams stay organized, collaborate effectively, and deliver results faster. With its intuitive design and powerful features, Fly is perfect for teams, departments, and organizations</p> 
+                                <button onclick="pricingBtn()" class="pricing-btn">See Pricing</button>                                 
+                            </div>                             
+                            <!-- Sign In Form -->                             
+                            <div class="signin-form-container"> 
+                                <h2>Join Fly Today</h2> 
+                                <input type="text" id="name" placeholder="Full name*" required name="name"> 
+                                <input type="email" id="email" placeholder="Email*" required name="email"> 
+                                <div class="password-show-hide"> 
+                                    <input type="password" id="password" placeholder="Password*" required name="password" autocomplete="new-password"> <i class="fa-solid fa-eye-slash toggle-password-icon" onclick="togglePassword()"></i> 
+                                </div>                                
+                                <select name="Type" id="type" required> 
+                                    <option value="" disabled selected>Type</option>                                     
+                                    <option value="basic">Basic</option>                                     
+                                    <option value="pro">Pro</option>                                     
+                                    <option value="business">Business</option>                                     
+                                </select>                                 
+                                <button onclick="registerBtn()" class="register-btn">Register</button>                                 
+                            </div>                             
+                        </div>                         
+                    </div>                     
+                </article>                 
+            </section>             
+            <!-- Footer Section -->             
+            <footer> 
+                <div class="footer-container"> 
+                    <div class="social-media"> <a href="https://www.facebook.com/people/Chanderbhan-Swami/100066880653105/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a> <a href="https://www.facebook.com/people/Chanderbhan-Swami/100066880653105/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a> <a href="https://www.instagram.com/chanderbhan_swami/" target="_blank"><i class="fa-brands fa-instagram"></i></a> <a href="https://www.linkedin.com/in/chanderbhanswami/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a> 
+                    </div>                     
+                    <div class="copyright"> 
+                        <p>&copy; 2025 Fly App. All Rights Reserved.</p> 
+                        <p>Designed and Developed by <a href="https://www.instagram.com/chanderbhan_swami/" target="_blank">@Chanderbhan</a> at <a href="https://www.technotaau.com/" target="_blank">Techno Taau</a></p> 
+                    </div>                     
+                    <div class="demo-image"> 
+                        <p>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a> and <a href="https://www.freepik.com/" target="_blank">Freepik</a></p> 
+                    </div>                     
+                    <div class="footer-links"> <a href="javascript:void(0)" onclick="openModal('privacy')">Privacy Policy</a> <a href="javascript:void(0)" onclick="openModal('terms')">Terms of Service</a> <a href="mailto:support@flyapp.com">Contact Us</a> 
+                    </div>                     
+                </div>                 
+            </footer>             
+            <!-- Popup Modal for Privacy Policy and Terms of Service -->             
+            <div id="modal-overlay" class="modal-overlay" style="display: none;"> 
+                <div class="modal-content" id="modal-content"> <span class="modal-close" onclick="closeModal()">×</span> 
+                    <div id="modal-text"> 
+                    </div>                    
+                </div>                 
+            </div>             
+        </main>
+        <div id="overlay" class="overlay"></div>
+    </body>     
+</html>

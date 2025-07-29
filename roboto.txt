@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://beta.familialforestry.org/sitemap.xml
