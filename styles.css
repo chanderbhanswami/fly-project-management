@@ -1201,7 +1201,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-    background-image: url('/Images/ChatGPT\ Image\ Jul\ 2\,\ 2025\,\ 08_32_46\ PM.png');
+    background-image: url('Images/ChatGPT\ Image\ Jul\ 2\,\ 2025\,\ 08_32_46\ PM.png');
     background-size: cover;
     background-position: center;
     clip-path: polygon(0 7.8%, 100% 0%, 100% 88.9%, 0% 96.8%);
@@ -5324,4 +5324,5 @@ footer {
     .modal-content {
         border: 2px solid #333;
     }
+
 }
