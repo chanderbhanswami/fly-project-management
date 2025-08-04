@@ -4802,7 +4802,7 @@ footer {
     .eighth-container-background {
         height: 100%;
         margin-top: 2rem;
-        background-image: url(/Images/80254.jpg);
+        background-image: url(Images/80254.jpg);
         clip-path: polygon(0 4.8%, 100% 3.8%, 100% 91.9%, 0% 92.9%);
         height: 170vh;
     }
@@ -5326,5 +5326,6 @@ footer {
     }
 
 }
+
 
 
